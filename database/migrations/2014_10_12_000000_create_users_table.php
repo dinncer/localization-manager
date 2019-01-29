@@ -7,7 +7,7 @@ use Illuminate\Database\Migrations\Migration;
 class CreateUsersTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run user migrations.
      *
      * @return void
      */
@@ -18,8 +18,10 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->smallInteger('role')->default('2');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
