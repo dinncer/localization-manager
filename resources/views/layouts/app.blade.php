@@ -65,7 +65,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         @if(Session::has('message'))
-                        <div class="alert alert-danger alert-dismissable">
+                        <div class="alert alert-info alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             {!! Session::get("message") !!}
                         </div>

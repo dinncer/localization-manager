@@ -6,12 +6,24 @@
 |--------------------------------------------------------------------------
 */
 
+// Home Page
+
 Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+// User Auth Routes
+
 Auth::routes();
+
+// User Module Management
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('project', 'ProjectController');
+    Route::resource('word', 'WordController');
+});
+
 
 /*
 |--------------------------------------------------------------------------

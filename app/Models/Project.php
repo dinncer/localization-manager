@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Auth;
 
 class Project extends Model
 {
@@ -15,4 +16,13 @@ class Project extends Model
      * @var string
      */
     protected $primaryKey = 'id_project';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'title'
+    ];
 }
