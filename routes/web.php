@@ -29,4 +29,6 @@ Route::get('admin/logout', 'Admin\LoginController@logout');
 
 Route::group(['middleware' => ['auth','administrator']], function () {
     Route::get('admin/dashboard', 'Admin\DashboardController@index');
+    Route::resource('admin/language', 'Admin\LanguageController');
+    Route::resource('admin/user', 'Admin\UserController');
 });

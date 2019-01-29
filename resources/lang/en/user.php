@@ -20,5 +20,10 @@ return [
     'name' => 'Username',
     'password_confirmation' => 'Password Confirm',
     'register_button' => 'Submit',
+    'module_title' => 'User Management',
+    'created_at' => 'Registration Date',
+    'crud_add' => 'New user added',
+    'crud_delete' => 'User deleted',
+    'crud_update' => 'User updated',       
 
 ];

@@ -16,7 +16,7 @@
                     <div class="form-group">
                         {!! Form::label('password', Lang::get('user.password'), array('class'=>'col-md-4 control-label')); !!}
                         <div class="col-md-8">
-                            {!! Form::text('password',null,['class'=>'form-control']) !!}
+                            {{ Form::password('password',['class'=> 'form-control']) }}
                         </div>
                     </div>
                     <div class="form-group">

@@ -15,4 +15,13 @@ class Language extends Model
      * @var string
      */
     protected $primaryKey = 'id_language';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'name', 'language_code', 'country_code'
+    ];
 }
