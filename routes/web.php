@@ -22,6 +22,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('home', 'HomeController@index')->name('home');
     Route::get('tool/wizard', 'ToolController@wordCopyWizard');
     Route::post('tool/wizard', 'ToolController@wordCopyWizardSave');
+    Route::get('csv/import', 'WordBulkController@import');
+    Route::post('csv/import', 'WordBulkController@csvImport');
+    Route::get('csv/export', 'WordBulkController@csvExport');
     Route::resource('project', 'ProjectController');
     Route::resource('word', 'WordController');
 });
