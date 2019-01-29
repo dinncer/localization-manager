@@ -19,7 +19,9 @@ Auth::routes();
 // User Module Management
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('home', 'HomeController@index')->name('home');
+    Route::get('tool/wizard', 'ToolController@wordCopyWizard');
+    Route::post('tool/wizard', 'ToolController@wordCopyWizardSave');
     Route::resource('project', 'ProjectController');
     Route::resource('word', 'WordController');
 });
