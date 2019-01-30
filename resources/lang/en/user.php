@@ -24,6 +24,7 @@ return [
     'created_at' => 'Registration Date',
     'crud_add' => 'New user added',
     'crud_delete' => 'User deleted',
-    'crud_update' => 'User updated',       
+    'crud_update' => 'User updated',
+    'welcome_message' => 'Welcome, ',
 
 ];

@@ -20,5 +20,7 @@ return [
     'edit_form' => 'Edit Form',
     'submit_button' => 'Submit',
     'dashboard_title' => 'Dashboard',
+    'total_member' => 'Total Member',
+    'total_lang' => 'Total Language',
     
 ];
