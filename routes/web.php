@@ -29,7 +29,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('word', 'WordController');
 });
 
-
 /*
 |--------------------------------------------------------------------------
 | Administrator
@@ -48,4 +47,16 @@ Route::group(['middleware' => ['auth','administrator']], function () {
     Route::get('admin/dashboard', 'Admin\DashboardController@index');
     Route::resource('admin/language', 'Admin\LanguageController');
     Route::resource('admin/user', 'Admin\UserController');
+});
+
+/*
+|--------------------------------------------------------------------------
+| API
+| Note : This section "api.php" can be taken on, "auth" condition can be added. (Easy to test here)
+|--------------------------------------------------------------------------
+*/
+
+Route::prefix('api/v1')->group(function () {
+    Route::get('languages', 'ApiController@languages');
+    Route::get('locale/{project_id}/{filter?}', 'ApiController@locale');
 });
