@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `role`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Administrator', 'administrator@test.com', '$2y$10$iQ8kb3YEL.sG0O8pMA96peaHYGIveIjiBKNG.nal7RENy/X4tsCyi', 1, 'zlEFtRqHrL3xPfPk42wXnC9x2dhQr2rB0DiAQNS4pCmQL6RH6mTMLBaFQdHC', '2019-01-30 02:26:00', '2019-01-30 02:26:00', NULL),
-(2, 'John Doe', 'john@deo.com', '$2y$10$5cw29rCywpNjjtl9modInegR5nwE2qAF44BnPs..zi9r/iqtL983C', 2, 'CkLZZQLttV4YB5cnhxwsd0MRkGF1dooR6NkQnnM0c8RmkpQUX8oHNblhA2I1', '2019-01-30 02:31:14', '2019-01-30 02:31:14', NULL);
+(2, 'John Doe', 'john@doe.com', '$2y$10$5cw29rCywpNjjtl9modInegR5nwE2qAF44BnPs..zi9r/iqtL983C', 2, 'CkLZZQLttV4YB5cnhxwsd0MRkGF1dooR6NkQnnM0c8RmkpQUX8oHNblhA2I1', '2019-01-30 02:31:14', '2019-01-30 02:31:14', NULL);
 
 --
 -- Indexes for dumped tables
