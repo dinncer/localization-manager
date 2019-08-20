@@ -19,7 +19,7 @@ The sample project was developed with Laravel 5.
 
 ## Test Login Information
 
-- User ("/"): `john@deo.com - 123456`
+- User ("/"): `john@doe.com - 123456`
 - Admin ("/admin") : `administrator@test.com - 123456`
 
 ## API Demo Test
